@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VersiFy</title>
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+
+        <form
+            method="POST"
+            action="/lyrics"
+            name="Form"
+            class="row d-flex justify-content-center col-10 mx-auto"
+        >
+            <div class="mb-2">
+                <label for="song" class="form-label">Song</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a song name"
+                    name="song"
+                    id="song"
+                    required
+                />
+            </div>
+            <div class="mb-2">
+                <label for="artist" class="form-label">Artist</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter the artist name"
+                    name="artist"
+                    id="artist"
+                    required
+                />
+                <div class="python-submit-div me-2">
+                    <input
+                        type="submit"
+                        value="Submit"
+                        class="btn btn-info btn-lg"
+                    />
+                </div>
+            </div>
+        </form>
+        <script src="/scripts/bootstrap.js"></script>
+    </body>
+</html>
